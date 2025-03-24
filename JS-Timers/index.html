@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <input type="number" id="duration" placeholder="Enter time in seconds" />
+        <button onclick="startTimer()">Start Timer</button>
+        <div class="timer" id="timerDisplay">00:00</div>
+    </div>
+
+    <div class="container">
+        <h1>Delayed Notification</h1>
+        <input type="number" id="delayTime" placeholder="Enter delay in milliseconds" />
+        <button onclick="showNotification()">Show Notification</button>
+        <div id="notificationDisplay" class="notification"></div>
+    </div>
+
+    <div class="container">
+        <h1>Repeat Notification</h1>
+        <input type="number" id="intervalTime" placeholder="Enter interval in milliseconds" />
+        <button onclick="startRepeatingNotification()">Start Repeating Notifications</button>
+        <button onclick="stopRepeatingNotification()">Stop Notifications</button>
+        <div id="repeatNotificationDisplay" class="notification"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
